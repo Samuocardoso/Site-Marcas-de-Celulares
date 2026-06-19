@@ -1,0 +1,123 @@
+:root {
+  --bg: #f5f5f5;
+  --text: #333;
+  --header: #e6d5c3;
+  --card: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.4s ease;
+}
+
+/* 🔶 BARRA SUPERIOR */
+header {
+  background: var(--header);
+  text-align: center;
+  padding: 30px;
+  transition: 0.4s ease;
+}
+
+/* 🧠 TÍTULO (COR FORÇADA POR TEMA) */
+header h1 {
+  transition: 0.4s ease;
+}
+
+/* MENU */
+.menu button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SEÇÕES */
+.section {
+  display: none;
+  padding: 20px;
+}
+
+/* CARD */
+.content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.4s ease;
+}
+
+.content img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* 🍏 APPLE */
+.apple-theme {
+  --bg: #eaeaea;
+  --text: #333;
+  --header: #d6d6d6;
+  --card: #ffffff;
+}
+
+.apple-theme header h1 {
+  color: #333;
+}
+
+/* 📱 SAMSUNG */
+.samsung-theme {
+  --bg: #121212;
+  --text: #d0b3ff;
+  --header: #2b0a3d;
+  --card: #1f1f1f;
+}
+
+.samsung-theme header h1 {
+  color: #ffffff;
+}
+
+/* 🟠 XIAOMI */
+.xiaomi-theme {
+  --bg: #fff3e6;
+  --text: #ff7a00;
+  --header: #ff7a00;
+  --card: #ffffff;
+}
+
+.xiaomi-theme header h1 {
+  color: #ffffff;
+}
+
+/* 🔵 MOTOROLA */
+.motorola-theme {
+  --bg: #e3f2fd;
+  --text: #1e88e5;
+  --header: #1e88e5;
+  --card: #ffffff;
+}
+
+.motorola-theme header h1 {
+  color: #ffffff;
+}
+
+/* ⚠️ FOOTER CORRIGIDO */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--header);
+  color: var(--text);
+  transition: 0.4s ease;
+}
+
+/* FOOTER EM TEMAS ESCUROS/CLAROS */
+.samsung-theme footer,
+.xiaomi-theme footer,
+.motorola-theme footer {
+  color: #ffffff;
+}
